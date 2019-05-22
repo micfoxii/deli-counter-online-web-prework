@@ -17,4 +17,12 @@ def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
+def now_serving(ns)
+  if ns.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{ns}."
+  end
+end
+
 # Write your code here.
