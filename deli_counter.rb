@@ -1,12 +1,10 @@
-def line(katz_deli)
+def line(name)
   katz_deli = []
-  if katz_deli.length == 0 
+  if katz_deli.length === 0 
     puts "The line is currently empty."
-  else
-    message = "The line is currently:"
-    katz_deli.each_with_index do |value, index|
-  message += "{index.to_i+1}. #{value}"
+  else katz_deli.each_with_index do |name, index| katz_deli << "#{index+1} #{name}"
+    puts "The line is currently: #{katz_deli}"
   end
-    puts "#{message}"
-  end
+end
+end
 # Write your code here.
