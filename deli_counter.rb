@@ -21,8 +21,8 @@ def now_serving(ns)
   if ns.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{ns[0]
-    
+    puts "Currently serving #{ns[0]}."
+    ns.shift
   end
 end
 
